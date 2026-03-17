@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Твой покемон</title>
+</head>
+<body>
+    <h1>{{ name | title }}</h1>
+    <img src="{{ img_url }}" alt="Покемон" style="width: 200px;">
+    <div style="white-space: pre-line; margin: 20px 0;">{{ info }}</div>
+    <a href="{{ url_for('index') }}">Назад</a>
+    <br>
+    <a href="{{ url_for('level_up') }}">Повысить уровень!</a>
+</body>
+</html>
